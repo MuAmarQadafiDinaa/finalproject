@@ -1,0 +1,380 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+li {
+    list-style: none;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 70px;
+    background-color: rgb(44, 135, 255);
+}
+header h1{
+    display: inline-block;
+    float: left;
+    padding:15px 24px;
+    text-transform: uppercase;
+}
+header h1 a{
+    transition: 0.3s;
+    color:black;
+}
+header h1 a:hover{
+    color: firebrick;
+
+}
+header ul{
+    float: right;
+}
+header ul li{
+    padding: 24px;
+    display: inline-block;
+}
+header ul li a{
+    transition: 0.3s;
+    color:black;
+}
+header ul li a:hover{
+    color: firebrick;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    width: 90%;
+    margin:0 auto;
+}
+.container ::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.mobile-menu:hover{
+    cursor: pointer;
+}
+.mobile-menu{
+    float: right;
+    display: none;
+    padding:17px;
+}
+#check{
+    display: none;
+}
+@media (max-width: 768px){
+    .mobile-menu{
+        display: block;
+    }
+    header ul{
+        display: none;
+    }
+    header h1{
+        font-size: 12px;
+    }
+    .list-education {
+    float: none;
+    padding-left: 20px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    }
+    .universitas{
+        margin-left: 20px;
+        padding-top: 35px;
+        padding-bottom: 15px;
+    }
+    .list-work {
+        float: none;
+        padding-left: 200px;
+        padding-top: 35px;
+        padding-bottom: 15px;
+    }
+    .job-role{
+        margin-left: 20px;
+        padding-top: 35px;
+        font-size: 13px;
+        padding-bottom: 15px;
+    }
+    .job-role ul li{
+        list-style: initial;
+    }
+    .list-volunteer {
+        float: none;
+        padding-left: 20px;
+        padding-top: 35px;
+        padding-bottom: 15px;
+    }
+    .act{
+        margin-left: 20px;
+        padding-top: 35px;
+        padding-bottom: 15px;
+    }
+    .list-contact {
+        float: none;
+        padding-left: 20px;
+        margin-left: 60px;
+    }
+    .contact{
+        align-content: center;
+    }
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgb(44, 135, 255);
+    transition: 0.5s;
+}
+.sidebar ul li a{
+    color: cornsilk;
+}
+.sidebar ul li{
+    padding: 24px;
+    transition: 0.5s;
+}
+.sidebar ul li:hover{
+    background-color: darkgray;
+}
+#check:checked~.sidebar{
+    left: 0px;
+}
+.copy-container {
+    padding: 70px 0 40px 0;
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/12/13/44/blue-2137088_960_720.jpg);
+    background-size: cover;
+    padding-left:30px;
+    padding-top:40px;
+    margin-bottom: 40px;
+}
+.banner-left img:hover{
+    transform: scale(1.2);
+}
+.container1:hover{
+    transform: scale(1.2);
+}
+.container2:hover{
+    transform: scale(1.2);
+}
+.container3:hover{
+    transform: scale(1.2);
+}
+.copy-container p{
+    color:black;
+}   
+.copy-container img{
+    height: 200px;
+    width: auto;
+    margin-bottom: 20px;
+
+}
+.banner-left {
+    padding-left: 85px;
+}
+.banner-left p{
+    line-height: 35px;
+    font-size: 20px;
+}
+.list-education {
+    float: left;
+    padding-left: 200px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+.tittle-container1{
+    font-size: 20px;
+    padding-left: 550px;
+}
+.tittle-container1 img{
+    height: 50px;
+    width: auto;
+}
+.tittle-container2{
+    font-size: 20px;
+    padding-left: 490px;
+}
+.tittle-container2 img{
+    height: 80px;
+    width: auto;
+}
+.tittle-container3{
+    font-size: 20px;
+    padding-left: 490px;
+}
+.tittle-container3 img{
+    height: 80px;
+    width: auto;
+}
+.tittle-container1 h1{
+    text-align: center;
+    padding-top: 15px;
+}
+.tittle-container2 h1{
+    text-align: center;
+    padding-top: 15px;
+}
+.tittle-container3 h1{
+    text-align: center;
+    padding-top: 15px;
+}
+.tittle-container1 h1 span{
+    color: rgb(44, 135, 255);;
+}
+.tittle-container2 h1 span{
+    color: rgb(44, 135, 255);;
+}
+.tittle-container3 h1 span{
+    color: rgb(44, 135, 255);;
+}
+.universitas{
+    margin-left: 700px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+.list-work {
+    float: left;
+    padding-left: 200px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+.job-role{
+    margin-left: 700px;
+    padding-top: 35px;
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+.job-role ul li{
+    list-style: initial;
+}
+.list-volunteer {
+    float: left;
+    padding-left: 200px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+.act{
+    margin-left: 700px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+.list-contact {
+    float: left;
+    padding-left: 100px;
+    margin-left: 60px;
+}
+.education {
+    margin-bottom: 40px;
+}
+.container1 img {
+    height: 100px;
+    width: auto;
+    padding-left: 0%;
+}
+.work-experience {
+    margin-bottom: 40px;
+}
+.volunteer-experience {
+    margin-bottom: 40px;
+}
+section h1{
+    font-size: 22px;
+}
+section h2{
+    font-size: 18px;
+}
+.contact ul li img{
+    height: 25px;
+    width: auto;
+}
+.contact ul li{
+    padding: 15px;
+    margin-left: 120px;
+    float: left;
+}
+section .contact h3{
+    text-align: center;
+}
+section .contact{
+    margin-bottom: 100px;
+}
+footer{
+    background-color:  rgb(44, 135, 255);
+}
+.footer-bottom{
+    text-align: center;
+    background-color: rgb(33, 95, 177);
+}
+.footer-content .content{
+    padding-left: 500px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 11px;
+}
+.switch input{
+    display: none;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+    margin-top: 2px;
+}
+.slider::before{
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: #fff;
+    border-radius: 50%;
+    transition: .4s;
+}
+input:checked + .slider{
+    background: #97939c;
+}
+input:checked + .slider::before{
+    transform: translateX(26px);
+}
+.dark-mode {
+    background: rgb(0, 0, 0);
+}
+.dark-mode section{
+    color: blanchedalmond;
+}
+.dark-mode .copy-container{
+    background-image: url(https://cdn.pixabay.com/photo/2019/06/08/21/32/castle-4261029_960_720.jpg);
+    color: blanchedalmond;
+}
+.dark-mode .copy-container p{
+    color: blanchedalmond;
+}
+.dark-mode footer{
+    background-color: firebrick;
+}
+.dark-mode .footer-bottom{
+    background-color: rgb(121, 28, 28);
+}
+.dark-mode header{
+    background-color: firebrick;
+}
